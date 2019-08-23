@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alltimes Fitnss Club</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="slide_show.css">
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+		$(document).ready(function() {
+			$("#slides img").slice(1).hide();
+			setInterval(function(){
+				$("#slides img").first().fadeOut(1000)
+			   	.next().fadeIn(1000)
+			   	.end()
+			   	.appendTo("#slides");
+			   	}, 3000);
+		});
+	</script>
+
+
+    </head>
+    <body onload='initMap()'>
+        <!-- Main wrapper -->
+        <div id="wrapper">
+            <!-- Page banner -->
+            <div id="banner"><img src="images/alltimes.png" style=" border-top-left-radius: 30px;" width="200" height="146" alt="AllTimes Logo"> 
+            </div>
+            
+        <!--This is the navigation section. First DIV is the wrapper -->
+            <div id="nav">
+        <!-- Home button --> 
+                <a href="index.html" target="_blank"><div class="home">Home</div></a>
+        <!-- About button -->
+                <a href="about.html" target="_blank"><div class="about">About Us</div></a>
+        <!-- FAQ button -->
+                <a href="rates.html" target="_blank"><div class="rates">Rates</div></a>
+        <!-- Careers button -->
+                <a href="events.html" target="_blank"><div class="events">Events</div></a>
+        <!--Contact button --> 
+                <a href="contact.html" target="_blank"><div class="contact">Contact Us</div></a>
+        <!--Registration button --> 
+                <a href="registration.html" target="_blank"><div class="registration">Registration</div></a>
+            </div>
+            <!--End of navigation section -->
+            
+       
+            <!-- Content section -->
+            <div id="content"><h2>About Us</h2>
+                <div id="slides">
+           <img src="images/images4.jpg" class="imgobj" width="685" height="190" alt="posterpage">
+           <img src="images/images23.jpg" class="imgobj" width="685" height="190" alt="poolside">
+           <img src="images/images21.jpg" class="imgobj" width="685" height="190" alt="group">                      
+           <img src="images/images17.jpg" class="imgobj" width="685" height="190" alt="workout">
+           <img src="images/images19.jpg" class="imgobj" width="685" height="190" alt="posterpage">
+       </div>
+                <img src="images/images4.jpg" class="imgobj" width="685" height="190" alt="posterpage">
+        <div class="row-col">
+            <h3 class="shaddowing" style="color:red;">Fitness For Everyone..</h3>
+            <p>Established in 2017.Alltimes Fitness Club began in Southern California with a belief: Fitness should be on “Your Terms”. The club offers an expansive selection of first-rate training amenities and well-rounded services in an open, clean and energetic setting.
+ Alltimes Fitness Club strives to make all our guests comfortable, confident, and motivate to achieve their fitness goals. We remove the restriction of time by being open 24 hours. We support the responsibility of having kids by providing Kids Club.What we are is a diverse community</p>  
+<p>We remove the uncertainty by the education and motivation of our personal training professionals. We offer a variety of group exercise classes throughout the day to keep it fun and a community. There is no one: Type, Reason, or WayWe have three different locations at this moment. Alltimes Fitness Club in Palmdale, Panorama City and Las Vegas. We’re excited to announce that Alltimes Fitness Club in Norwalk is coming soon! You can join the club without signing long term contract, and can get access to all locations. 
+</p>
+       
+     <p>Our Main headquarters is located at:<br />
+        3042 Lower Fortnum Way<br />
+        Salt Lake, UT 84104<br />
+    </p>       
+    </div>
+                     
+<script src='http://maps.google.com/maps/api/js?sensor=false'></script>
+ <script>
+      function initMap () {
+        var latlng = new google.maps.LatLng( 62.242425, -92.601678 );
+        var options = {
+          zoom: 4,
+          center: latlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map( document.getElementById(
+              'map_canvas' ), options );
+
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map: map,
+          title: "JavaJam Coffee House marker"
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: "<p><strong>How to find Us:</strong><br><address>12312 Main Street<br>Mountain Home, CA 93923</address></p>"
+        });
+
+        google.maps.event.addListener(marker, 'click', function(){
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+      <div id='map_canvas' style='width:685px; height:170px; float:left; padding: 0px;'></div>       
+            </div><!-- end of content -->
+                
+             
+            
+    
+
+         
+<!-- End Carousel slideshows -->
+                
+                
+            <!-- Footer section, for legal and additional links -->
+
+            <footer><p><small>Copyright &copy; 2017 AllTimes Fitness Club. All Rights Reserved</small></p></footer>
+            </div>
+        
+        <!--End of main wrapper -->
+
+    </body>
+</html>

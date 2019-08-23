@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alltimes Fitnss Club</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <!-- Main wrapper -->
+        <div id="wrapper">
+            <!-- Page banner -->
+            <div id="banner"><img src="images/alltimes.png" style=" border-top-left-radius: 30px;" width="200" height="146" alt="AllTimes Logo">
+                <div id="twistie" style="float: right;">
+<canvas id="canvas1" width="100" height="100">
+</canvas>
+<script>
+var mycanvas=document.getElementById("canvas1");
+var cntx=mycanvas.getContext('2d'); 
+cntx.lineCap = 'round';
+cntx.strokeStyle = 'white';
+cntx.lineWidth = 3;
+function turn_it(){
+  cntx.beginPath();
+  cntx.moveTo(0, 0);
+  // How far to move from center
+  move_num =2;
+  // How far to rotate around center
+  rotate_num = 0.8;  // between 0 and 1
+  // convert to radians.
+  rads = rotate_num * 2 * Math.PI;
+ 
+  // calculate positioning around center
+  for (i=1; i<=20; i++){ 
+    distance = i * move_num;
+    around = i * rads;
+    // position point to draw from
+    x = Math.cos(around) * distance;
+    y = Math.sin(around) * distance;
+     // draw line
+    cntx.lineTo(x, y);
+  }
+}
+
+cntx.translate(cntx.canvas.width/2, cntx.canvas.height/2);
+setInterval(
+  function () {
+  cntx.clearRect(-cntx.canvas.width/2, -cntx.canvas.height/2, cntx.canvas.width, cntx.canvas.height);
+  cntx.rotate(.01);  //controls rotation speed
+  turn_it.apply();
+  cntx.stroke();
+  }, 5);
+ 
+</script> </div>
+
+
+                
+            </div>
+        <!--This is the navigation section. First DIV is the wrapper -->
+            <div id="nav">
+        <!-- Home button --> 
+                <a href="index.html" target="_blank"><div class="home">Home</div></a>
+        <!-- About button -->
+                <a href="about.html" target="_blank"><div class="about">About Us</div></a>
+        <!-- FAQ button -->
+                <a href="rates.html" target="_blank"><div class="rates">Rates</div></a>
+        <!-- Careers button -->
+                <a href="events.html" target="_blank"><div class="events">Events</div></a>
+        <!--Contact button --> 
+                <a href="contact.html" target="_blank"><div class="contact">Contact Us</div></a>
+        <!--Registration button --> 
+                <a href="registration.html" target="_blank"><div class="registration">Registration</div></a>
+            </div>
+            <!--End of navigation section -->
+            
+       
+            <!-- Content section -->
+            <div class="container">
+                <div id="content"><h2 class="shaddowing" style="color:white">Welcome...</h2>
+                
+                <img src="images/home-img2.jpg" width="685" height="180" class="imgobj" alt="posterpage">
+            <p class="row-col">
+Here at Alltimes Fitness, we are a leading chain of fitness clubs offering an extensive range of facilities, programs and classes. The group
+remains committed to providing its members with the best equipment, facilities, services and trainers on the market with an emphasis on delivering
+ongoing support, encouragement and friendliness to help members achieve their fitness goals in a great club atmosphere.</p>                   
+                <aside>
+                     <p><em>Click here to</em>
+         <a class = "nodec" href = "registration.html">
+            Registration</a></p>
+                    <p class="social">Share:<br>
+	                       <img src="social/facebook-tiny.png" alt="Shate this to someone" />
+	                       <img src="social/google-plus-tiny.png" alt="Share this" />
+	                       <img src="social/linkedin-tiny.png" alt="Share this on Twitter" />
+                           <img src="social/rss-tiny.png" alt="Share this on facebook" />
+                           <img src="social/twitter-tiny.png" alt="Share this" />
+                            <img src="social/youtube-tiny.png" alt="Share this" />
+                        
+	                    </p><h4 style="color: navy;">Hours of Operation: 24/7 facility</h4>
+
+                    <h3>How to Sign Up:</h3>
+                    <ol>
+                        <li>Stop by any of our five locations</li>
+                        <li>Fill out a membership form</li>
+                        <li>If you were referred by a friend, list the friend name</li>
+                        <li>Come for your first workout free!</li>
+                    </ol> 
+                </aside>
+
+                <h3>Amenities at Alltimes Fitness include:</h3>
+                <ul>
+                    <li>Convenient location adjacent to interstate 81</li>
+                    <li>Whirlpool</li>
+                    <li>Full-time massage therapy</li>
+                    <li>Warm water indoor pool</li> 
+                </ul>
+                <img src="images/banner02.jpg" class="image" width="310" height="190" alt="group training">
+                 <!--
+                <img src="images/images15.jpg"  width="180" height="190" alt="punch">
+                <img src="images/images13.jpg"  width="180" height="190" alt="punch">
+                -->
+            </div>
+                <article>
+                    <h2>Customer Reviews</h2>
+                    <div id="article-sec">
+                        <div class="col">
+                            <p class="one" id="example"><b>Dec 10, 2016<br />Max Bishop<br /></b><img src="ratingstars/5_Star_Rating_System_3_and_a_half_stars.png" style="width: 100px; height: 20px;" alt="3 1/2 stars"><i>"Lorem ipsum dolor sit amet consectetuer. Lorem ipsum dolor sit amet consectetuer, Lorem ipsum dolor sit amet consectetuer Lorem ipsum dolor sit amet consectetuer. Lorem ipsum dolor sit amet consectetuer. Lorem ipsum dolor sit amet consectetuer. Lorem ipsum dolor sit amet consectetuer. Lorem ipsum dolor sit amet consectetuer, Lorem ipsum dolor sit amet consectetuer."</i></p>
+                        
+                        <p class="one" id="bgcolor"><b>Feb 17, 2017<br />Maria Martinez<br /></b><img src="ratingstars/5_Star_Rating_System_4_and_a_half_stars.png" style="width: 100px; height: 20px;" alt="3 1/2 stars"><i>"Suspendisse potenti. Donec commodo hendrerit arcu, vitae laoreet tortor scelerisque vestibulum. Nulla sem magna, aliquet quis semper vitae, semper vel ligula. Proin condimentum tellus mattis leo varius dictum. In ornare iaculis enim. Donec sed tortor massa. Vivamus neque nulla, sagittis nec facilisis id, porta ut nisl. Praesent ultricies leo dignissim sem sollicitudin dictum."</i></p>
+                        
+                        <p><b>March 4, 2017<br />Alice Baker<br /></b><img src="ratingstars/5_Star_Rating_System_1_and_a_half_stars.png" style="width: 100px; height: 20px;" alt="3 1/2 stars"><i>"Nullam ultricies augue iaculis mi placerat adipiscing. Nullam pulvinar sem vel nibh egestas mollis. Fusce venenatis sodales velit, sit amet mollis diam vehicula at. Fusce posuere lobortis arcu, nec mattis risus hendrerit non. Aenean luctus vestibulum eros eget lobortis. Proin nunc lorem, molestie ut pulvinar a, ullamcorper non tortor. Proin ultrices justo quis lectus posuere convallis in eu elit."</i></p>
+                        </div>
+            </div>
+            </article>
+            
+         
+                <span></span>
+            
+<!-- End Carousel slideshows -->
+                
+                
+            <!-- Footer section, for legal and additional links -->
+
+            <footer><p><small>Copyright &copy; 2017 AllTimes Fitness Club. All Rights Reserved.</small></p></footer>
+            </div><!-- container end-->
+            </div><!--End of main wrapper -->
+        
+        
+
+    </body>
+</html>

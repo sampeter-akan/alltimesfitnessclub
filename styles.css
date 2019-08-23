@@ -1,0 +1,327 @@
+body {
+    background-image: url("images/bground.jpg");
+    background-repeat: no-repeat;
+    background-size: 4107px 4107px;
+}
+a:link {
+    color: olivedrab;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 14px;
+}
+#wrapper {
+    width: 900px;
+    height: 800px;
+    margin: 0 auto;
+}
+#banner {
+    width: 900px;
+    height: 150px;
+    background-color: #ff6a00;
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url("images/posterbg.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 900px 150px;
+    padding: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    max-width: 100%;
+}
+
+#nav {
+    background-color: lightcoral;
+    width: 900px;
+    height: 50px;
+    display: table;
+    background: radial-gradient(12rem circle at bottom,  yellow, orange, red);  
+}
+
+.home {
+    width: 150px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+div.home:hover {
+    background-color: #ffd800;
+    color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about {
+    width: 150px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+div.about:hover {
+    background-color: #ffd800;
+    color: #ffffff;
+}
+
+.rates {
+    width: 150px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+div.rates:hover {
+    background-color: #ffd800;
+    color: #ffffff;
+}
+
+.events {
+    width: 150px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+div.events:hover {
+    background-color: #ffd800;
+    color: #ffffff;
+}
+
+.contact {
+    width: 150px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+div.contact:hover {
+    background-color: #ffd800;
+    color: #ffffff;
+}
+
+.registration {
+    width: 150px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+div.registration:hover {
+    background-color: #ffd800;
+    color: #ffffff;
+}
+
+body {
+    font-family: verdana, sans-serif;
+    font-size: 13px;
+}
+
+#content {
+    background-color: bisque; 
+    width: 900px; 
+    height: 700px;
+    padding: 0.6px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 5px 5px 5px 0 #000;
+}
+.row-col {
+    color: teal;
+   -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+
+
+#article-sec {
+    background-color: honeydew; 
+    width: 900px; 
+    height: 400px;
+    padding: 0.6px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 0px 0 5px #000;
+}
+    
+
+
+footer {
+    background-color: #ffd800; 
+    text-align: center;
+    clear: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(red,yellow,lightgrey);
+    background: -webkit-linear-gradient(red,yellow,lightgrey);
+    background: -moz-linear-gradient(red,yellow,lightgrey);
+    background: -ms-linear-gradient(red,yellow,lightgrey);
+    background: -o-linear-gradient(red,yellow,lightgrey);    
+}
+
+
+/**
+h1 {
+    color: purple;
+    font-family: jonnymac;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0px;
+}
+**/
+.imgobj img {
+    padding-left: 5px;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h6 {
+    color: steelblue;
+    font-family: verdana, sans-serif;
+    padding-left: 5px;
+}
+
+p {
+    font-family: verdana, sans-serif;
+    text-align: justify;
+    padding-right: 65px;
+    padding-left: 5px;
+}
+
+.social{
+    float: right;
+    color: teal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/** about page CSS **/
+#main { width: 60%; margin-right: 5%; float: left; }
+details { width: 35%; float: right;}
+summary::-webkit-details-marker {
+display: none;
+}
+
+
+a.nodec { 
+     text-decoration: none;
+     color: brown;
+     margin-top: 30px;
+}
+
+.col {
+   -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+#p1 {
+    text-align: center;
+    font-size: 12px;
+    color: #1FCC7E;
+}
+
+    .right-op {
+        text-align: right;
+        color: #FFB926;
+    }
+
+
+p.one {
+    border-style: double;
+    border-width: medium;
+    border-color: darkgrey;
+    padding: 5px;
+}
+  
+#bgcolor {
+    background-color: lightcyan;
+}
+
+#example {
+    background-image: url("images/leaf.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+aside {
+    float: right;
+    width: 400px;
+    border: 3px solid purple;
+    margin-right: 65px;
+    padding: 10px;
+    background-color: #fe9c00;
+}
+
+.image {
+    float: left;
+    background-color: blanchedalmond;
+    width: 310px;
+    height: 180px;
+    padding: 0px 0px 0px 0px;
+    border: 10px dashed burlywood;
+    margin: 25px 10px 25px 20px;
+    outline: 25px groove pink;
+}
+
+/** gallery code **/
+#gallery { position: relative; }
+figure { position: absolute;
+         left: 280px;
+		 text-align: center;
+		 opacity: .25 }
+#gallery ul { width: 300px; 
+              list-style-type: none;
+}
+#gallery li { display: inline; 
+              float: left;
+			  padding: 10px;
+}
+#gallery img { border-style: none; }
+#gallery a { color: green;
+             text-decoration: none; 
+			 font-style: italic;
+}
+#gallery span { position: absolute; 
+                left: -1000px;
+				opacity: 0;
+				-webkit-transition: opacity 3s ease-in-out;
+                -moz-transition: opacity 3s ease-in-out;
+                -o-transition: opacity 3s ease-in-out;
+                transition: opacity 3s ease-in-out; 
+}
+#gallery a:hover span { position: absolute;
+                        top: 16px; 
+						left: 320px;
+                        text-align: center; 
+						opacity: 1;
+}
+
+.button {
+background: black;
+color: white;
+border-color: red;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* CSS for onfocusblur.html. */
+textarea    { width: 300px; height: 100px; }
+label.fixed { width: 4em; float: left; } 
+#helpText   { font-family: sans-serif; color: mediumblue; margin-top: 10px; }
+
+p::first-letter {
+    color: #0094ff;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+
+.shaddowing {
+    font-family: calibri;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px #000;
+}
